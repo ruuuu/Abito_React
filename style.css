@@ -1,0 +1,175 @@
+*{
+  box-sizing: border-box;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgb(10, 20, 58);
+}
+
+.btn{
+  padding: 10px 15px;
+  border-color: transparent;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--online{
+  background-color: rgb(255, 255, 255);
+  color: rgb(10, 20, 58);
+}
+
+.btn--primary{
+  background-color: rgb(37, 110, 235);
+  color: rgb(255, 255, 255);
+}
+
+.container{
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+.header{
+  padding: 32px 0 28px;
+}
+
+.header__box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.header__logo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+}
+
+.header__logo span{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.header__controls{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__burger{
+  width: 30px;
+  height: 15px;
+  display: none;
+}
+
+.search{
+  margin-bottom: 45px;
+}
+
+.search__box{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  border-radius: 5px;
+  padding: 3px;
+  background-color: rgb(37, 110, 235);
+}
+
+.search__input{
+  flex-grow: 1;
+  padding: 14px 21px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+.search__input::placeholder{
+  color: rgba(10, 20, 58, 0.4);
+}
+
+.search__btn{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 16px 20px;
+}
+
+
+.search__btn-icon{
+  width: 15px;
+  height: 15px;
+}
+
+.search__btn-text{
+  font-size: 16px;
+  line-height: 19px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .container{
+    max-width: 930px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container{
+    max-width: 730px;
+    
+  }
+}
+
+@media (max-width: 786px) {
+  .container{
+    max-width: 100%;
+  }
+
+  .header__controls{
+    display: none;
+  }
+
+  .header__burger{
+    display: block;
+  }
+
+  
+}
