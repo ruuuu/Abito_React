@@ -96,6 +96,7 @@ body{
 
 .search__input{
   flex-grow: 1;
+  min-width: 0;
   padding: 14px 21px;
   border: none;
   border-radius: 5px;
@@ -124,10 +125,23 @@ body{
 .search__btn-text{
   font-size: 16px;
   line-height: 19px;
-  
 }
 
+.content__box{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 
+.content__main{
+  flex-grow: 1;
+}
+
+.content__sidebar{
+  width: 100%;
+  max-width: 217px;
+}
 
 
 
@@ -169,6 +183,10 @@ body{
 
   .header__burger{
     display: block;
+  }
+
+  .search__btn-text{
+    display: none;
   }
 
   
