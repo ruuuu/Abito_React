@@ -2,6 +2,25 @@
   box-sizing: border-box;
 }
 
+h1, h2, h5, p{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  display: block;
+  width: 100%;
+}
 
 body{
   margin: 0;
@@ -12,6 +31,7 @@ body{
   line-height: 16px;
   color: rgb(10, 20, 58);
 }
+
 
 .btn{
   padding: 10px 15px;
@@ -131,6 +151,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
@@ -138,9 +159,27 @@ body{
   flex-grow: 1;
 }
 
+.content__main-title{  
+  margin-bottom: 25px; 
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgb(10, 20, 58);
+}
+
+.content__main-list{
+  display: flex;
+  justify-content: space-between;
+  row-gap: 30px;
+  flex-wrap: wrap;
+}
+
+.list__item{
+  width: calc((100% - 60px) / 3);  /*  3 карточки в ряд, расстояние между ними 30px */
+}
+
 .content__sidebar{
-  width: 100%;
-  max-width: 217px;
+  width: 261px;
 }
 
 
@@ -163,14 +202,31 @@ body{
   .container{
     max-width: 930px;
   }
+
+  .list__item{
+    width: calc((100% - 30px) / 2);  /*  2 карточки в ряд */
+  }
 }
+
 
 @media (max-width: 991px) {
   .container{
     max-width: 730px;
-    
+  }
+
+  .content__box{
+    flex-direction: column;
+  }
+
+  .content__main{
+    width: 100%;
+  }
+
+  .content__sidebar{
+    width: 100%;
   }
 }
+
 
 @media (max-width: 786px) {
   .container{
@@ -188,6 +244,11 @@ body{
   .search__btn-text{
     display: none;
   }
+}
 
-  
+
+@media (max-width: 480px) {
+  .list__item{
+    width: 100%;  
+  }
 }
