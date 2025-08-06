@@ -179,34 +179,40 @@ body{
   flex-direction: column;
   align-items: flex-start;
   border-radius: 10px;
-  overflow: hidden; /*  все что у картинки не влизает в list__item, обрежет */
+  overflow: hidden; /*  все что у картинки не влезает в list__item, обрежет */
+}
+
+.list__item:hover .list__item-title{
+  color: rgb(37, 110, 235);
 }
 
 .content__sidebar{
   width: 261px;
+  min-width: 261px;
 }
 
 .list__item-img-box{
   margin-bottom: 12px;
-  width: 264px;
-  height: 178px;
+  width: 100%;
+  display: flex;
 }
 
 .list__item-img-box  img{
   width: 100%; /* если большая картнка, чтоб не сломался контент */
 }
 
+
 .list__item-title{
   margin-bottom: 5px;
-  color: rgb(37, 110, 235);
+  color: rgb(10, 20, 58);
   font-size: 16px;
   font-weight: 700;
   line-height: 19px;
 }
 
+
 .list__item-price{
   margin-bottom: 10px;
-  color: rgb(10, 20, 58);
   font-size: 16px;
   font-weight: 700;
   line-height: 19px;
@@ -221,6 +227,14 @@ body{
  color: rgb(196, 196, 196);
 }
 
+
+.content__sidebar-title{
+  margin-bottom: 23px; 
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgb(10, 20, 58);
+}
 
 
 
@@ -261,6 +275,7 @@ body{
 
   .content__sidebar{
     width: 100%;
+    min-width: none;
   }
 }
 
